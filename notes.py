@@ -3,14 +3,14 @@
 my_notes = open ('my_notes.txt', 'w')
 
  # Metodo write(): escribir una linea a la vez
-my_notes.write("paso 1: salir del colegio. \n ")
-my_notes.write("paso 2: ir al parque con mis amigos. \n ")
-my_notes.write("paso 3: subir a un bus. \n")
+my_notes.write("paso 1: usuario: johana grefa. \n ")
+my_notes.write("paso 2: num.c:2200984786. \n ")
+my_notes.write("paso 3: edad: 34. \n")
 
 
 
 # Metodo writelines(): escribir una lista de lineas
-lineas =("paso 4: llegar a casa.\n" , "paso 5: ver videos por distracion. \n")
+lineas =("paso 4: color: morado.\n" , "paso 5: profecion: estudiante. \n")
 my_notes.writelines(lineas)
 
 
@@ -27,13 +27,12 @@ my_notes.close()
 
  #Metodo 2. readlines()
 my_notes = open('my_notes.txt','r')
-print('Metodo 2:')
+print('Metodo 2: readlines()')
 print('___________________')
-print('paso 1: salir del colegio ')
-print('paso 2: cojer el bus ')
-print('paso 3: llegar a casa ')
-print('paso 4: almorzar ')
-print('paso 5: realizar las tareas ')
+for paso in my_notes.readlines():
+    print(paso.rstrip('\n'))
+    my_notes.close()
+
 
 
 
