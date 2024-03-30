@@ -1,7 +1,6 @@
 # crea un nuevo archico llamado my_notas.txt.
 
 my_notes = open ('my_notes.txt', 'w')
-
  # Metodo write(): escribir una linea a la vez
 my_notes.write("paso 1: salir del colegio. \n ")
 my_notes.write("paso 2: ir al parque con mis amigos. \n ")
@@ -34,6 +33,8 @@ print('paso 2: cojer el bus ')
 print('paso 3: llegar a casa ')
 print('paso 4: almorzar ')
 print('paso 5: realizar las tareas ')
+
+
 
 
 
